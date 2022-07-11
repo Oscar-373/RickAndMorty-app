@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  height: 100%;
+  background-image: url("https://images5.alphacoders.com/633/thumb-1920-633151.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-img > img{
+  width: 100%;
+  height: 450px;
+}
+
+.header-location{
+  align-items: center;
+  text-align: center;
+  margin-top: -4px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 30px;
+  border: 3px solid blue;
+  border-radius: 5px;
+  background-color: #002a77;
+  color: #ffbf00;
+
+}
+
+.sub-header{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-button{
+  padding: 20px;
+}
+
+.header-button input{
+  width: 40%;
+  height: 40px;
+  background-color: #00233c;
+  color: #ffffff;
+}
+
+.header-button button{
+  width: 80px;
+  height: 40px;
+  background-color: #8d00a6;
+  color: #ffbf00;
+  border: 2px solid rgb(170, 0, 255);
+}
+
+.card-residents img{
+  margin: 50px 20px;
+  width: 175px;
+  height: 150px;
+}
+
+.card-residents{
+  margin: 20px;
+  width: 30%;
+  height: 250px;
+  border: 3px solid #002a77;
+  border-radius: 15px;
+  display: flex;
+  background-color: #0a2132;
+  color: #ffffff;
+
+}
+
+.status-color{
+  display: flex;
+}
+
+.status{
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+.info-resident{
+  margin-left: 25px;
+  margin-top: 55px;
+}
+
+.list-residents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
