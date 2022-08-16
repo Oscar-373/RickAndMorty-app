@@ -78,13 +78,33 @@
   display: flex;
 }
 
-.status{
-  display: flex;
+.Dead{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-top: 7px;
+  margin-top: 8px;
+  margin-right: 5px;
+  background-color: red;
 }
+
+.Alive{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 5px;
+  background-color: green;
+}
+
+.unknown{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 5px;
+  background-color: gray;
+}
+
 .info-resident{
   margin-left: 25px;
   margin-top: 55px;

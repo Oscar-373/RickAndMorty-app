@@ -5,14 +5,14 @@ import { useEffect, useState } from 'react';
 const ResidentsInfo = ({resident, id}) => {
 
     const [ character, setCharacter ] = useState({})
-    const [ status, setStatus ]= useState("")
+    //const [ status, setStatus ]= useState("")
 
     useEffect(() => {
         axios.get(resident)
-        .then(res => {
-            setCharacter(res.data)
-            setStatus(res.data.status)})
+        .then(res => setCharacter(res.data))
     }, [resident])
+
+    console.log(character)
 
     return (
         <li key={id} className="card-residents">
@@ -20,7 +20,8 @@ const ResidentsInfo = ({resident, id}) => {
                 <div className='info-resident'>
                     <h4>{character.name}</h4>
                     <div className='status-color'>
-                    <h4>{character.status}-{character.species}</h4> 
+                        <div className= {`${character.status}`}></div>
+                        <h4>{character.status}-{character.species}</h4> 
                     </div>
                     <p>origin</p>
                     <h4>{character.origin?.name}</h4>
